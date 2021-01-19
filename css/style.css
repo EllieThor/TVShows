@@ -1,0 +1,84 @@
+/* all pages! */
+body {
+  background-image: url("../images/Nighthawk.jpg");
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+/* nav bar */
+
+.logo {
+  font-family: "Indie Flower", cursive;
+  font-size: 1.875rem;
+  font-weight: 400;
+}
+/* shows page */
+
+/* card area */
+
+.theSummary {
+  height: 200px;
+  overflow-y: auto;
+}
+
+.nameTitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+/* single show page */
+.nameH1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+/* single show area */
+.show-card {
+  background-color: white;
+}
+
+.showImg {
+  width: 200px;
+}
+/* cast area */
+.character-img {
+  width: 100px;
+}
+
+.actor-name {
+  display: block;
+}
+.episodes-card {
+  background-color: white;
+}
+.cast-card {
+  background-color: white;
+}
+
+/* actors page */
+/* actor img */
+.actorImg {
+  width: 210px;
+}
+
+.actor-card {
+  background-color: white;
+  width: 800px;
+}

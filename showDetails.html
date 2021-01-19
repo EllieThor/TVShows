@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+    <!-- Ajax File -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/tv.png" type="image/x-icon" />
+    <title>Single-Show</title>
+  </head>
+  <body>
+    <section id="nav-sec">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+        <a class="navbar-brand logo p-2 ml-5 mr-4" href="index.html">TV-Shows</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item p-2 ml-5 mr-4">
+              <a class="nav-link" href="index.html">Shows</a>
+            </li>
+            <li class="nav-item p-2 ml-5 mr-4">
+              <a class="nav-link" href="actors.html">People</a>
+            </li>
+            <li class="nav-item active p-2 ml-5 mr-4">
+              <a class="nav-link" href="index.html">Back<span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <section id="shows-sec" class="m-2">
+      <div class="container show-card rounded" id="containerDV"></div>
+    </section>
+
+    <section id="Episodes-sec" class="m-2">
+      <div class="container episodes-card rounded">
+        <div class="row text-center">
+          <div class="col-12">
+            <h2>Episodes Information</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="container nectCon">
+            <div class="row">
+              <div class="col-12">
+                <h3>Next Episode</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 p-1">
+                <table id="nextTable" class="table table-striped">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">Season</th>
+                      <th scope="col">Episode number</th>
+                      <th scope="col">Episode name</th>
+                      <th scope="col">Air-Date</th>
+                      <th scope="col">Air-Time</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tNextBody">
+                    <!-- <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                      <td>@fat</td>
+                    </tr> -->
+                  </tbody>
+                </table>
+                <p id="noTableNext"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="container prevCon">
+            <div class="row">
+              <div class="col-12">
+                <h3 id="preEpeID">Previous Episodes</h3>
+              </div>
+            </div>
+            <div id="preDv" class="row">
+              <div class="col-12 p-1">
+                <table class="table table-striped">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">Season</th>
+                      <th scope="col">Episode number</th>
+                      <th scope="col">Episode name</th>
+                      <th scope="col">Airdate</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tBody">
+                    <!-- <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr> -->
+                  </tbody>
+                </table>
+                <p id="noTablePre"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cast-sec" class="m-2">
+      <div class="container cast-card rounded">
+        <div class="row">
+          <div class="col-12">
+            <h1 id="h1cast"></h1>
+          </div>
+        </div>
+        <div id="castDV" class="start row"></div>
+      </div>
+    </section>
+
+    <!-- js file -->
+    <script src="js/showDetails.js"></script>
+  </body>
+</html>
