@@ -47,7 +47,7 @@ function searchShowApi() {
 
 function printShow(singleShow) {
   let img = "";
-  img = singleShow.image ? singleShow.image.medium : "images/mika.JPEG";
+  img = singleShow.image ? singleShow.image.medium : "images/SorryShows.png";
 
   let summary = "";
   summary = singleShow.summary ? singleShow.summary : `We don't have a summary for <i>${singleShow.name}</i>`;

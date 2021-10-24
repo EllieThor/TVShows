@@ -48,7 +48,7 @@ function printActors() {
 
 function printSingleActor(singleActor) {
   let img = "";
-  img = singleActor.person.image ? singleActor.person.image.medium : "images/alex.png";
+  img = singleActor.person.image ? singleActor.person.image.medium : "images/SorryActor.png";
   let countryName = "";
   countryName = singleActor.person.country ? singleActor.person.country.name : `Sorry, we don't have a country for ${singleActor.person.name}.`;
 

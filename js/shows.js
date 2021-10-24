@@ -48,7 +48,7 @@ function printShows() {
 
 function printSingleShow(singleShow) {
   let img = "";
-  img = singleShow.show.image ? singleShow.show.image.medium : "images/mika.JPEG";
+  img = singleShow.show.image ? singleShow.show.image.medium : "images/SorryShows.png";
   let summary = "";
   summary = singleShow.show.summary != null ? singleShow.show.summary : `We don't have a summary for <i>${singleShow.show.name}</i>`;
   contentStr += `
