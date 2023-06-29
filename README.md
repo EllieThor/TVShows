@@ -1,2 +1,2 @@
 # TVShows
-DEMO: https://tv-shows-ellie.netlify.app
+DEMO: https://tvshows-project.netlify.app
